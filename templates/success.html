@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Feedback form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="https://colorlib.com/etc/cf/ContactFrom_v5/images/icons/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css"
+		href="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://colorlib.com/etc/cf/ContactFrom_v5/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://colorlib.com/etc/cf/ContactFrom_v5/fonts/iconic/css/material-design-iconic-font.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/animate/animate.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/css-hamburgers/hamburgers.min.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/animsition/css/animsition.min.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/select2/select2.min.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/daterangepicker/daterangepicker.css">
+
+	<link rel="stylesheet" type="text/css"
+		href="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/noui/nouislider.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v5/css/util.css">
+	<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v5/css/main.css">
+
+	<meta name="robots" content="noindex, follow">
+	<script
+		nonce="b3c28841-9826-4022-bd93-0902264a2b3d">(function (w, d) { !function (dK, dL, dM, dN) { dK[dM] = dK[dM] || {}; dK[dM].executed = []; dK.zaraz = { deferred: [], listeners: [] }; dK.zaraz.q = []; dK.zaraz._f = function (dO) { return function () { var dP = Array.prototype.slice.call(arguments); dK.zaraz.q.push({ m: dO, a: dP }) } }; for (const dQ of ["track", "set", "debug"]) dK.zaraz[dQ] = dK.zaraz._f(dQ); dK.zaraz.init = () => { var dR = dL.getElementsByTagName(dN)[0], dS = dL.createElement(dN), dT = dL.getElementsByTagName("title")[0]; dT && (dK[dM].t = dL.getElementsByTagName("title")[0].text); dK[dM].x = Math.random(); dK[dM].w = dK.screen.width; dK[dM].h = dK.screen.height; dK[dM].j = dK.innerHeight; dK[dM].e = dK.innerWidth; dK[dM].l = dK.location.href; dK[dM].r = dL.referrer; dK[dM].k = dK.screen.colorDepth; dK[dM].n = dL.characterSet; dK[dM].o = (new Date).getTimezoneOffset(); if (dK.dataLayer) for (const dX of Object.entries(Object.entries(dataLayer).reduce(((dY, dZ) => ({ ...dY[1], ...dZ[1] })), {}))) zaraz.set(dX[0], dX[1], { scope: "page" }); dK[dM].q = []; for (; dK.zaraz.q.length;) { const d_ = dK.zaraz.q.shift(); dK[dM].q.push(d_) } dS.defer = !0; for (const ea of [localStorage, sessionStorage]) Object.keys(ea || {}).filter((ec => ec.startsWith("_zaraz_"))).forEach((eb => { try { dK[dM]["z_" + eb.slice(7)] = JSON.parse(ea.getItem(eb)) } catch { dK[dM]["z_" + eb.slice(7)] = ea.getItem(eb) } })); dS.referrerPolicy = "origin"; dS.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dK[dM]))); dR.parentNode.insertBefore(dS, dR) };["complete", "interactive"].includes(dL.readyState) ? zaraz.init() : dK.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+</head>
+
+<body>
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+				<span class="contact100-form-title">
+					International Conference on Recent Innovations in Computer Science ICRICS - 2023 Conference Feedback
+					Form
+				</span>
+				<div class="wrap-input100 input100-select bg-success bg1">
+                    Your Response was saved
+                </div>
+				<button class="btn btn-warning" onclick="window.location.href='/download-photos'">Download Certificates</button>
+		</div>
+	</div>
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/animsition/js/animsition.min.js"></script>
+
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/bootstrap/js/popper.js"></script>
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function () {
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function () {
+				$(this).on('select2:close', function (e) {
+					if ($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/daterangepicker/moment.min.js"></script>
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/daterangepicker/daterangepicker.js"></script>
+
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/countdowntime/countdowntime.js"></script>
+
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/vendor/noui/nouislider.min.js"></script>
+	<script>
+		var filterBar = document.getElementById('filter-bar');
+
+		noUiSlider.create(filterBar, {
+			start: [1500, 3900],
+			connect: true,
+			range: {
+				'min': 1500,
+				'max': 7500
+			}
+		});
+
+		var skipValues = [
+			document.getElementById('value-lower'),
+			document.getElementById('value-upper')
+		];
+
+		filterBar.noUiSlider.on('update', function (values, handle) {
+			skipValues[handle].innerHTML = Math.round(values[handle]);
+			$('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+			$('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+		});
+	</script>
+
+	<script src="https://colorlib.com/etc/cf/ContactFrom_v5/js/main.js"></script>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-23581568-13');
+	</script>
+	<script defer
+		src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
+		integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
+		data-cf-beacon='{"rayId":"7db1c6617d8e1bf6","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
